@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DemoTableViewCell" rowHeight="120" id="KGk-i7-Jjw" customClass="DemoTableViewCell" customModule="json2demoget" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="93.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPk-oz-xal">
+                        <rect key="frame" x="17" y="15" width="566" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <color key="textColor" red="0.22786192145115824" green="0.24143178982462385" blue="0.28135562272335024" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tce-yT-KXm">
+                        <rect key="frame" x="0.0" y="53.5" width="600" height="40"/>
+                        <subviews>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uiG-3A-bpY">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.97019803450225317" blue="0.99748751071124853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="selected" image="ic_radio_stoke">
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
+                                <state key="selected" image="ic_radio_selected"/>
+                                <connections>
+                                    <action selector="button4:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="f1V-2b-KVz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8x-mS-YKJ">
+                                <rect key="frame" x="150" y="0.0" width="150" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.96595145123791248" blue="0.93334968793898665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="selected" image="ic_radio_stoke">
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
+                                <state key="selected" image="ic_radio_selected"/>
+                                <connections>
+                                    <action selector="button3:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eMV-3x-g5c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7f-Ky-q4e">
+                                <rect key="frame" x="300" y="0.0" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.99228630670614881" green="0.99364525899862421" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="selected" image="ic_radio_stoke">
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
+                                <state key="selected" image="ic_radio_selected"/>
+                                <connections>
+                                    <action selector="button2:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kKi-hI-ir8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDm-es-eJL">
+                                <rect key="frame" x="450" y="0.0" width="150" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.97223350874459824" blue="0.98703316588874812" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="selected" image="ic_radio_stoke">
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
+                                <state key="selected" image="ic_radio_selected"/>
+                                <connections>
+                                    <action selector="button1:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tKh-gH-P09"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="12d-s2-zAc"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tce-yT-KXm" firstAttribute="top" secondItem="bPk-oz-xal" secondAttribute="bottom" constant="19" id="3ro-0P-3dr"/>
+                    <constraint firstAttribute="trailing" secondItem="tce-yT-KXm" secondAttribute="trailing" id="6ZR-sv-HeY"/>
+                    <constraint firstAttribute="bottom" secondItem="tce-yT-KXm" secondAttribute="bottom" id="HxQ-EI-oDO"/>
+                    <constraint firstAttribute="bottom" secondItem="tce-yT-KXm" secondAttribute="bottom" id="Skg-Qf-cQo"/>
+                    <constraint firstAttribute="trailing" secondItem="bPk-oz-xal" secondAttribute="trailing" constant="17" id="mag-at-uc9"/>
+                    <constraint firstItem="tce-yT-KXm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="o1T-HK-gcr"/>
+                    <constraint firstItem="bPk-oz-xal" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="o2v-Fr-fSn"/>
+                    <constraint firstItem="bPk-oz-xal" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="umu-jI-d2I"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="customizedButton1" destination="QDm-es-eJL" id="LUq-UB-g7L"/>
+                <outlet property="customizedButton2" destination="x7f-Ky-q4e" id="W3E-ra-wl9"/>
+                <outlet property="customizedButton3" destination="t8x-mS-YKJ" id="O38-Yk-Qt0"/>
+                <outlet property="customizedButton4" destination="uiG-3A-bpY" id="mNq-Kf-N1W"/>
+                <outlet property="questionLabel" destination="bPk-oz-xal" id="Z3H-HT-tzW"/>
+            </connections>
+            <point key="canvasLocation" x="230" y="-126"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_radio_selected" width="24" height="24"/>
+        <image name="ic_radio_stoke" width="24" height="24"/>
+    </resources>
+</document>
